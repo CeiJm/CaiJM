@@ -16,20 +16,20 @@
   <meta name="author" content="A Ming">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1.environments标签1&lt;environmentes default&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmentes&gt;    这里的default指定默认的环境名称 1&lt;environmente id&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmente&gt;    这里的id指定当前环境的名称 1&lt;transactionMa">
+    <meta name="description" content="一、mybatis的核心配置1.mybatis-config.xml文件内容标签1&lt;environmentes default&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmentes&gt;    这里的default指定默认的环境名称 1&lt;environmente id&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmente&gt;    这里的id指定当前">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mybatis的核心配置文件概述">
-<meta property="og:url" content="https://ceijm.github.io/Website/2022/02/23/mybatis%E7%9A%84%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:title" content="mybatis的概述">
+<meta property="og:url" content="https://ceijm.github.io/Website/2022/02/23/mybatis%E7%9A%84%E6%A6%82%E8%BF%B0/index.html">
 <meta property="og:site_name" content="CeiJm">
-<meta property="og:description" content="1.environments标签1&lt;environmentes default&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmentes&gt;    这里的default指定默认的环境名称 1&lt;environmente id&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmente&gt;    这里的id指定当前环境的名称 1&lt;transactionMa">
+<meta property="og:description" content="一、mybatis的核心配置1.mybatis-config.xml文件内容标签1&lt;environmentes default&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmentes&gt;    这里的default指定默认的环境名称 1&lt;environmente id&#x3D;&quot;&quot;&gt;&lt;&#x2F;environmente&gt;    这里的id指定当前">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-23T15:13:06.000Z">
-<meta property="article:modified_time" content="2022-02-23T15:22:58.056Z">
+<meta property="article:modified_time" content="2022-02-24T15:13:27.146Z">
 <meta property="article:author" content="A Ming">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>mybatis的核心配置文件概述 - CeiJm</title>
+  <title>mybatis的概述 - CeiJm</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -151,7 +151,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="mybatis的核心配置文件概述">
+            <span class="h2" id="subtitle" title="mybatis的概述">
               
             </span>
 
@@ -172,7 +172,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      382 字
+      1.5k 字
     </span>
   
 
@@ -181,7 +181,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      13 分钟
     </span>
   
 
@@ -210,10 +210,10 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">mybatis的核心配置文件概述</h1>
+            <h1 style="display: none">mybatis的概述</h1>
             
             <div class="markdown-body">
-              <h4 id="1-environments标签"><a href="#1-environments标签" class="headerlink" title="1.environments标签"></a>1.environments标签</h4><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">&lt;environmentes default=<span class="hljs-string">&quot;&quot;</span>&gt;&lt;/environmentes&gt;  <br></code></pre></td></tr></table></figure>
+              <h3 id="一、mybatis的核心配置"><a href="#一、mybatis的核心配置" class="headerlink" title="一、mybatis的核心配置"></a>一、mybatis的核心配置</h3><h4 id="1-mybatis-config-xml文件内容标签"><a href="#1-mybatis-config-xml文件内容标签" class="headerlink" title="1.mybatis-config.xml文件内容标签"></a>1.mybatis-config.xml文件内容标签</h4><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">&lt;environmentes default=<span class="hljs-string">&quot;&quot;</span>&gt;&lt;/environmentes&gt;  <br></code></pre></td></tr></table></figure>
 
 <p>这里的default指定默认的环境名称</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">&lt;environmente <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;&quot;</span>&gt;&lt;/environmente&gt;  <br></code></pre></td></tr></table></figure>
@@ -228,6 +228,57 @@
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">&lt;property name<span class="hljs-operator">=</span><span class="hljs-string">&quot;&quot;</span> value<span class="hljs-operator">=</span><span class="hljs-string">&quot;&quot;</span> /&gt;<br></code></pre></td></tr></table></figure>
 
 <p>property标签为数据源配置的基本参数</p>
+<h3 id="二、MyBatis的核心配置"><a href="#二、MyBatis的核心配置" class="headerlink" title="二、MyBatis的核心配置"></a>二、MyBatis的核心配置</h3><h4 id="2-1MyBatis的核心对象"><a href="#2-1MyBatis的核心对象" class="headerlink" title="2.1MyBatis的核心对象"></a>2.1MyBatis的核心对象</h4><h5 id="2-1-1-SqlSessionFactoryBuilder"><a href="#2-1-1-SqlSessionFactoryBuilder" class="headerlink" title="2.1.1 SqlSessionFactoryBuilder"></a>2.1.1 SqlSessionFactoryBuilder</h5><p>​        SqlSessionFactoryBuilder通过build()方法构建SqlSessionFactory对象</p>
+<p>第一种形式:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">build(InputStream inputStream,String environment,Properties properties)<br></code></pre></td></tr></table></figure>
+
+<p>​        上述build()方法中，参数inputStream是字节流，它封装了XML文件形式的配置信息；参数environment和参数properties为可选参数。其中，参数environment用于指定将要加载的环境，包括数据源和事务管理器;参数properties用于指定将要加载的properties文件。</p>
+<p>第二种形式:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">build(Reader reader,String environment,Properties properties)<br></code></pre></td></tr></table></figure>
+
+<p>​        build()方法用Reader字符流封装了XML文件形式的配置信息。</p>
+<p>第三种形式:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jav">build(Configuration config)<br></code></pre></td></tr></table></figure>
+
+<p>Configuration对象用于封装MyBatis项目中的配置信息。</p>
+<h5 id="2-1-2-SqlSessionFactory"><a href="#2-1-2-SqlSessionFactory" class="headerlink" title="2.1.2 SqlSessionFactory"></a>2.1.2 SqlSessionFactory</h5><p>​        SqlSessionFactory用于创建SqlSession,所有的Mybatis应用都是以SqlSessionFactory为对象中心。</p>
+<p>​                                                                SqlSessionFactory的openSession()方法</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法名称</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">SqlSession openSession()</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(Boolean autoCommit)</td>
+<td align="center">参数autoCommit设置是否开启事务。若传入true表示关闭事务控制，自动提交;若传入false表示开启事务控制</td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(Connection connection)</td>
+<td align="center">参数connection可提供自定义链接</td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(TransactionlsoationLevel level)</td>
+<td align="center">参数level可设置隔离级别</td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(ExecutorType execType)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(ExecutorType execType,Boolean autoCommit)</td>
+<td align="center">参数execType 为执行器的类型，参数autoCommit设置是否开启事务</td>
+</tr>
+<tr>
+<td align="center">SqlSession openSession(ExecutorType execType,Connection connection)</td>
+<td align="center">参数execType 为执行器的类型，参数connection设置是否开启事务</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr>
